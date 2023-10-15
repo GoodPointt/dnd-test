@@ -1,0 +1,45 @@
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(100px);
+  font-weight: 900;
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}
+
+.wrap {
+  gap: 30px;
+}
+
+.box {
+  height: 600px;
+  width: 200px;
+  border: dotted blanchedalmond;
+}
+
+.task {
+  border: 1px solid tomato;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: all ease 300ms;
+}
+
+.draggedTask {
+  opacity: 0.1;
+}
+
+.task:hover {
+  border-color: green;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.boxDrop {
+  background-color: rgba(164, 164, 164, 0.17);
+  scale: 1.1;
+}
